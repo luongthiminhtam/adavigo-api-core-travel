@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\PUBLIC_ADAVIGO\API_PUB</_PublishTargetUrl>
+    <History>True|2023-12-18T03:12:36.2172608Z;True|2023-12-07T22:27:39.2072312+07:00;True|2023-12-07T09:10:48.0255654+07:00;True|2023-12-07T09:00:23.9199640+07:00;True|2023-12-06T21:30:47.9736041+07:00;True|2023-12-04T20:49:37.0896353+07:00;True|2023-12-04T11:18:56.5350542+07:00;True|2023-12-03T22:12:32.0865589+07:00;True|2023-12-01T22:01:53.2229045+07:00;True|2023-11-23T11:04:37.8005568+07:00;True|2023-11-23T10:53:31.2598817+07:00;True|2023-11-23T10:34:11.2310157+07:00;</History>
+  </PropertyGroup>
+</Project>
