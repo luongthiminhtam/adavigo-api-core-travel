@@ -1,0 +1,9 @@
+﻿using ENTITIES.Models;
+
+namespace ENTITIES.ViewModels.Client
+{
+    public class UserClientModel : User
+    {
+        public string Avatar { get; set; }
+    }
+}
