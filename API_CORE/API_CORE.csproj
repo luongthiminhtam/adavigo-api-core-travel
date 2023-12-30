@@ -20,10 +20,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ENTITIES\ENTITIES.csproj" />
-    <ProjectReference Include="..\REDIS\CACHING.csproj" />
-    <ProjectReference Include="..\REPOSITORIES\REPOSITORIES.csproj" />
-    <ProjectReference Include="..\Utilities\Utilities.csproj" />
+    <ProjectReference Include="..\ENTITIES\ENTITIES.csproj" Version="3.1.13/>
+    <ProjectReference Include="..\REDIS\CACHING.csproj" Version="3.1.13/>
+    <ProjectReference Include="..\REPOSITORIES\REPOSITORIES.csproj" Version="3.1.13/>
+    <ProjectReference Include="..\Utilities\Utilities.csproj" Version="3.1.13/>
   </ItemGroup>
 
   <ItemGroup>
