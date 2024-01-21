@@ -17,10 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "REPOSITORIES", "REPOSITORIE
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CACHING", "REDIS\CACHING.csproj", "{AA1AC610-9990-4683-9AA8-DAF419496C93}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceReceiverMedia", "ServiceReceiverMedia\ServiceReceiverMedia.csproj", "{7552150A-A886-4C45-9352-6C506CDA4513}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_LOGIN", "API_LOGIN\API_LOGIN.csproj", "{E96270DD-F690-4E31-892F-5EB576FA796D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
