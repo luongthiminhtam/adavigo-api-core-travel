@@ -1,5 +1,4 @@
-﻿using API_CORE.Service.Log;
-using APP.PUSH_LOG.Functions;
+﻿using APP.PUSH_LOG.Functions;
 using Entities.ViewModels;
 using ENTITIES.APPModels;
 using ENTITIES.APPModels.ReadBankMessages;

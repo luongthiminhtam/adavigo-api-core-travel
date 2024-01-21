@@ -1,5 +1,4 @@
-﻿using API_CORE.Service.Log;
-using API_CORE.Service.Price;
+﻿using API_CORE.Service.Price;
 using API_CORE.Service.Vin;
 using Caching.RedisWorker;
 using ENTITIES.ViewModels.Hotel;
