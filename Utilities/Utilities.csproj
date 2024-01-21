@@ -4,7 +4,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-  
+  <PropertyGroup>
+    <PublishDir>bin\$(Configuration)\netcoreapp3.1\Utilities</PublishDir>
+</PropertyGroup>
+
 
   <ItemGroup>
     <PackageReference Include="GoogleAuthenticator" Version="3.0.0" />
