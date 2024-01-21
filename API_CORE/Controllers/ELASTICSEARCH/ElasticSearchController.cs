@@ -34,6 +34,19 @@ namespace API_CORE.Controllers.ELASTICSEARCH
             elasticsearchDataRepository = _elasticsearchDataRepository;
         }
 
+        [HttpGet("jenkins/test.json")]
+        public async Task<ActionResult> testJenkins(string token)
+        {
+            return Ok(new
+            {
+                status = (int)ResponseType.SUCCESS,
+                msg = "hello jenskin"
+            });
+        }
+
+
+
+
         [HttpPost("hotel/get-list.json")]
         public async Task<ActionResult> GetDataProduct(string token)
         {
