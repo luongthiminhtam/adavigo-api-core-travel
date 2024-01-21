@@ -88,6 +88,7 @@ namespace REPOSITORIES.Repositories.Fly
             }
             catch (Exception ex)
             {
+                LogHelper.InsertLogTelegram("saveBooking - getBookingByBookingIdAsync: " + ex);
                 return null;
             }
 
@@ -116,6 +117,8 @@ namespace REPOSITORIES.Repositories.Fly
             }
             catch (Exception ex)
             {
+                LogHelper.InsertLogTelegram("saveBooking - getBookingBySessionId: " + ex);
+                return null;
             }
             return data;
 
