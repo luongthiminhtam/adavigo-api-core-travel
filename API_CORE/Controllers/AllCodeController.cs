@@ -57,7 +57,7 @@ namespace API_CORE.Controllers
             }
             catch (Exception ex)
             {
-                TeleLog.InsertLogTelegram(ex.Message);
+                //TeleLog.InsertLogTelegram(ex.Message);
                 return Ok(new { status = ((int)ResponseType.ERROR).ToString(), msg = "error: " + ex.ToString() });
             }
         }
@@ -90,7 +90,7 @@ namespace API_CORE.Controllers
             }
             catch (Exception ex)
             {
-                TeleLog.InsertLogTelegram("service/gen-api-token.json: "+ ex.Message);
+                //TeleLog.InsertLogTelegram("service/gen-api-token.json: "+ ex.Message);
                 return Ok(new { status = ((int)ResponseType.ERROR).ToString(), msg = "error: " + ex.ToString() });
             }
         }
@@ -138,7 +138,7 @@ namespace API_CORE.Controllers
             }
             catch (Exception ex)
             {
-                TeleLog.InsertLogTelegram("service/gen-api-token.json: " + ex.Message);
+                //TeleLog.InsertLogTelegram("service/gen-api-token.json: " + ex.Message);
                 return Ok(new { status = ((int)ResponseType.ERROR).ToString(), msg = "error: " + ex.ToString() });
             }
         }
@@ -170,7 +170,7 @@ namespace API_CORE.Controllers
             }
             catch (Exception ex)
             {
-                TeleLog.InsertLogTelegram(ex.Message);
+                //TeleLog.InsertLogTelegram(ex.Message);
                 return Ok(new { status = ((int)ResponseType.ERROR).ToString(), msg = "error: " + ex.ToString() });
             }
         }

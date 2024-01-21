@@ -26,7 +26,7 @@ namespace API_CORE.Controllers
         private IServicePiceRepository price_repository;
         private IServicePiceRoomRepository servicePiceRoomRepository;
         private readonly RedisConn redisService;
-        private LogService LogService;
+      
         private IHotelDetailRepository hotelDetailRepository;
         public VinController(IConfiguration _configuration, IServicePiceRepository _price_repository, RedisConn _redisService, IServicePiceRoomRepository _servicePiceRoomRepository, IHotelDetailRepository _hotelDetailRepository)
         {
@@ -34,7 +34,7 @@ namespace API_CORE.Controllers
             price_repository = _price_repository;
             redisService = _redisService;
             servicePiceRoomRepository = _servicePiceRoomRepository;
-            LogService = new LogService(_configuration);
+        
             hotelDetailRepository = _hotelDetailRepository;
         }
 
@@ -76,7 +76,7 @@ namespace API_CORE.Controllers
             }
             catch (Exception ex)
             {
-                LogService.InsertLog("VinController - getHotel: " + ex.ToString());
+                //LogService.InsertLog("VinController - getHotel: " + ex.ToString());
                 return Ok(new { status = ((int)ResponseType.ERROR).ToString(), msg = "error: " + ex.ToString() });
             }
 
@@ -348,7 +348,7 @@ namespace API_CORE.Controllers
             }
             catch (Exception ex)
             {
-                LogService.InsertLog("VinController - getHotelAvailability: " + ex.ToString());
+                //LogService.InsertLog("VinController - getHotelAvailability: " + ex.ToString());
 
                 return Ok(new { status = ((int)ResponseType.ERROR).ToString(), msg = "error: " + ex.ToString() });
             }
@@ -473,7 +473,7 @@ namespace API_CORE.Controllers
             }
             catch (Exception ex)
             {
-                LogService.InsertLog("VinController - GetSearchResultMinPrice: " + ex.ToString());
+                //LogService.InsertLog("VinController - GetSearchResultMinPrice: " + ex.ToString());
 
                 return Ok(new { status = ((int)ResponseType.ERROR).ToString(), msg = "error: " + ex.ToString() });
             }
@@ -679,7 +679,7 @@ namespace API_CORE.Controllers
             catch (Exception ex)
             {
 
-                LogService.InsertLog("VinController - getRoomDetailAvailability: " + ex.ToString());
+                //LogService.InsertLog("VinController - getRoomDetailAvailability: " + ex.ToString());
                 return Ok(new { status = ((int)ResponseType.ERROR).ToString(), msg = "Error On Excution. Vui lòng liên hệ IT" });
             }
         }
@@ -802,7 +802,7 @@ namespace API_CORE.Controllers
             }
             catch (Exception ex)
             {
-                LogService.InsertLog("VinController - getCreateBookingVin: " + ex.ToString());
+                //LogService.InsertLog("VinController - getCreateBookingVin: " + ex.ToString());
                 return Ok(new { status = ((int)ResponseType.ERROR).ToString(), msg = "Error On Excution. Vui lòng liên hệ IT" });
             }
         }
@@ -895,7 +895,7 @@ namespace API_CORE.Controllers
             }
             catch (Exception ex)
             {
-                LogService.InsertLog("VinController - GetHotelFilterFields: " + ex.ToString());
+                //LogService.InsertLog("VinController - GetHotelFilterFields: " + ex.ToString());
 
                 return Ok(new { status = ((int)ResponseType.ERROR).ToString(), msg = "error: " + ex.ToString() });
             }
@@ -1139,7 +1139,7 @@ namespace API_CORE.Controllers
             }
             catch (Exception ex)
             {
-                LogService.InsertLog("VinController - getHotelRoomsAvailability: " + ex.ToString());
+                //LogService.InsertLog("VinController - getHotelRoomsAvailability: " + ex.ToString());
                 return Ok(new { status = ((int)ResponseType.ERROR).ToString(), msg = "error: " + ex.ToString() });
             }
 
@@ -1333,7 +1333,7 @@ namespace API_CORE.Controllers
             }
             catch (Exception ex)
             {
-                LogService.InsertLog("VinController - getHotelRoomsPackages: " + ex.ToString());
+                //LogService.InsertLog("VinController - getHotelRoomsPackages: " + ex.ToString());
                 return Ok(new { status = ((int)ResponseType.ERROR).ToString(), msg = "error: " + ex.ToString() });
             }
 

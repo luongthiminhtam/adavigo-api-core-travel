@@ -21,11 +21,11 @@ namespace API_CORE.Controllers
     public class LogManagerController : ControllerBase
     {
         private IConfiguration configuration;
-        private LogService logService;
+       // private LogService logService;
         public LogManagerController(IConfiguration _configuration)
         {
             configuration = _configuration;
-            logService = new LogService(_configuration);
+           // logService = new LogService(_configuration);
         }
 
         [EnableCors("MyApi")]
@@ -49,7 +49,7 @@ namespace API_CORE.Controllers
                 if (CommonHelper.GetParamWithKey(token, out objParr, configuration["DataBaseConfig:key_api:api_manual"]))
                 {
                     LogModel logModel = JsonConvert.DeserializeObject<LogModel>(objParr[0].ToString());
-                    var result = TeleLog.InsertLogTelegram(logModel.log_content, logModel.log_type, logModel.log_source);
+                   // var result = TeleLog.InsertLogTelegram(logModel.log_content, logModel.log_type, logModel.log_source);
                     if (response_queue)
                     {
                         return Ok(new { status = ResponseTypeString.Success, message = "Push Log Success" });
@@ -188,15 +188,8 @@ namespace API_CORE.Controllers
                 if (CommonHelper.GetParamWithKey(token, out objParr, configuration["DataBaseConfig:key_api:api_manual"]))
                 {
                     SystemLog logModel = JsonConvert.DeserializeObject<SystemLog>(objParr[0].ToString());
-                    response_queue = logService.InsertLog(logModel);
-                    if (response_queue)
-                    {
-                        return Ok(new { status = ResponseTypeString.Success, msg = "Push Queue Success" });
-                    }
-                    else
-                    {
-                        return Ok(new { status = ResponseTypeString.Fail, msg = "Push Queue ERROR" });
-                    }
+                    // response_queue = logService.InsertLog(logModel);
+                    return Ok(new { status = ResponseTypeString.Fail, msg = "Push Queue ERROR" });
                 }
                 else
                 {

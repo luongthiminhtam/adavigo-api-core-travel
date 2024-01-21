@@ -44,13 +44,13 @@ namespace API_CORE.Service.Vin
                     token = authentication.authentication_token.Split(' ')[2];
                 }
                 if (string.IsNullOrEmpty(token)){
-                   await TeleLog.InsertLogTelegram(urlGetToken + " reponse empty token " );
+                   //await TeleLog.InsertLogTelegram(urlGetToken + " reponse empty token " );
                 }
                 return token;
             }
             catch (Exception ex)
             {
-              await  TeleLog.InsertLogTelegram(ex.Message);
+             // await  TeleLog.InsertLogTelegram(ex.Message);
                 return string.Empty;
             }
         }
@@ -81,7 +81,7 @@ namespace API_CORE.Service.Vin
                     }
                     catch (Exception ex)
                     {
-                        await TeleLog.InsertLogTelegram("url_hotel = " + ex.Message);
+                        //await TeleLog.InsertLogTelegram("url_hotel = " + ex.Message);
                         return string.Empty;
                     }
                 }
@@ -90,7 +90,7 @@ namespace API_CORE.Service.Vin
             }
             catch (Exception ex)
             {
-               await TeleLog.InsertLogTelegram("getAllRoom = "  + ex.Message);
+               //await TeleLog.InsertLogTelegram("getAllRoom = "  + ex.Message);
                 return string.Empty;
             }
         }
