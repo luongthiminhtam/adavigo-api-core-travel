@@ -1,5 +1,4 @@
-﻿using API_CORE.Service.Log;
-using Caching.RedisWorker;
+﻿using Caching.RedisWorker;
 using ENTITIES.Models;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
