@@ -40,7 +40,7 @@ namespace API_CORE.Controllers.ELASTICSEARCH
             return Ok(new
             {
                 status = (int)ResponseType.SUCCESS,
-                msg = "hello jenskin 2"
+                msg = "hello jenskin 3"
             });
         }
 
